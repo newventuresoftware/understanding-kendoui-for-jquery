@@ -68,19 +68,131 @@
                         <h4>Breaking the Ice</h4>
                         <img src="./img/breaking-the-ice.jpg" width="525" />
                     </section>
+                    <section>
+                        ...
+                    </section>
                 </section>
                 <section id="agenda" class="color-white" data-background-image="./img/school-board.jpg">
                     <h3>Agenda</h3>
                     <ul>
-                        <li class="fragment">Overview</li> <!-- jQuery, jQuery extensions, features(widgets, dataviz, mobile) -->
-                        <li class="fragment">Widgets</li>
+                        <li class="fragment">Overview</li>
+                        <li class="fragment">UI Widgets</li>
                         <li class="fragment">Data Source</li>
                         <li class="fragment">Templates</li>
-                        <li class="fragment">Themes</li>
-                        <!-- JSDO -->
-                        <!-- Performance Metrics -->
-                        <!-- Kendo for Angular, React, Vue -->
                     </ul>
+                </section>
+                <!-- Overview -->
+                <!-- jQuery, jQuery extensions, features(widgets, dataviz, mobile) -->
+                <section>
+                    <section id="jquery">
+                        <h3>jQuery</h3>
+                    </section>
+                    <section id="jquery-plugins">
+                        <h3>jQuery Plugins</h3>
+                    </section>
+                    <section>
+                        <h3>Live Demo</h3>
+                        <p>Implementing a custom jQuery plugin.</p>
+                        <img alt="Demo Image" src="./img/not-sure-if-trick-show-me-the-demo.jpg" width="400" class="no-border fragment" />
+                    </section>
+                    <section id="kendoui-descr">
+                        <h3>What is KendoUI?</h3>
+                    </section>
+                    <section id="kendoui-parts">
+                        <ul>
+                            <li>UI Widgets</li>
+                            <li>DataViz</li>
+                            <li>Mobile</li>
+                        </ul>
+                    </section>
+                    <section id="kendoui-how-it-works">
+                        how does it work?
+                    </section>
+                </section>
+                <!-- Widgets -->
+                <section>
+                    <section>
+                        <h3>UI Widgets</h3>
+                    </section>
+                </section>
+                <!-- Data Source -->
+                <section>
+                    <section>
+                        <h3>Data Source</h3>
+                    </section>
+                </section>
+                <!-- Templates -->
+                <section>
+                    <section>
+                        <h3>Templates</h3>
+                        <img alt="template diagram" src="./img/template-diagram.jpg" class="no-border" />
+                    </section>
+                    <section>
+                        <h3>Syntax</h3>
+                        <div>Render values as raw HTML: <pre><code class="html">#= value #</code></pre></div>
+                        <div>Display HTML encoded values: <pre><code class="html">#: value #</code></pre></div>
+                        <div>Execute arbitrary JavaScript code: <pre><code class="html"># if(true) { # "Non-script content..." # } #</code></pre></div>
+                    </section>
+                    <section>
+                        <p>Inline</p>
+                        <pre><code class="js">
+// compile
+var template = kendo.template('<span>#: message #</span>');
+
+// render
+$("#container").html(template({ message: "Hello Kendo!" }));
+                        </code></pre>
+                    </section>
+                    <section>
+                        <p>External</p>
+                        <pre><code class="html"><div id="container"></div>
+<script id="externalTemplate" type="text/x-kendo-template">
+    <ul>
+        # for (var i = 0; i < collection.length; i++) { #
+            <li>#= collection[i] #</li>
+        # } #
+    </ul>
+</script>
+                        </code></pre>
+                        <pre><code class="js">// compile
+var template = kendo.template($('#externalTemplate').html());
+// render
+$('#container').html(template({ collection: [0,1,2,3,4,5] }));</code></pre>
+                    </section>
+                    <section>
+                        <h3>Escaping</h3>
+                        <pre><code class="js">var templateWithHashSymbol = '<span> #: value # \\# </span>';</code></pre>
+                    </section>
+                    <section>
+                        <p>
+                            Templates in Kendo are rendered using string concatenation by executing pure JavaScript code.
+                        </p>
+                        <p>
+                            For maximum performance they should be compiled with the following flag set to false:
+                        </p>
+                        <pre><code class="js">kendo.template('<p> #: message #</p>', { useWithBlock: false });</code></pre>
+                    </section>
+                    <section>
+                        <h3>Live Demo</h3>
+                        <a href="http://demos.telerik.com/kendo-ui/templates/index" target="_blank">
+                            <img alt="Demo Image" src="./img/not-sure-if-trick-show-me-the-demo.jpg" width="400" class="no-border" />
+                        </a>
+                    </section>
+                </section>
+                <!-- Misc -->
+                <section>
+                    <section>
+                        <h3>Themes</h3>
+                    </section>
+                    <section>
+                        <h3>Kendo UI and JSDO</h3>
+                    </section>
+                    <section>
+                        <h3>Performance</h3>
+                    </section>
+                    <section>
+                        <h3>Using Kendo UI with other frameworks</h3>
+                    </section>
                 </section>
                 <section id="questions">
                     <h3>Questions?</h3>
