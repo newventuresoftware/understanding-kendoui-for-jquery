@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Slides</title>
+		<title>Understanding KendoUI for jQuery</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/simple.css">
@@ -84,13 +84,68 @@
                 <!-- Overview -->
                 <!-- jQuery, jQuery extensions, KendoUI Overview(widgets, dataviz, mobile) -->
                 <section>
-                    <section id="jquery">
-                        <h3>jQuery</h3>
+                    <section id="jquery" data-background="#202E3B">
+                        <img alt="" src="./img/jquery.png" class="no-border" />
                     </section>
-                    <section id="jquery-plugins">
-                        <h3>jQuery Plugins</h3>
+                    <section data-background="#202E3B">
+                        <h4 class="text-right">jQuery</h4>
+                        <p>Simplifies document traversal and manipulation, event handling, animation, and Ajax with an easy-to-use API</p>
+                        <img alt="" src="./img/jquery-logo-no-text.png" width="150" class="no-border bg-transparent" style="position: absolute; top: -80%; left: -10%" />
+                    </section>
+                    <section data-background="#202E3B">
+                        <h4 class="text-right">jQuery</h4>
+                        <ul>
+                            <li>Been around since 2006</li>
+                            <li><a href="https://trends.builtwith.com/javascript/jQuery" target="_blank" style="color: lightblue">Used by 73% of the top 100k sites</a></li>
+                            <li>Open Source</li>
+                            <li>Simple and easy to use</li>
+                            <li>Extensive browser support</li>
+                        </ul>
+                        <img alt="" src="./img/jquery-logo-no-text.png" width="150" class="no-border bg-transparent" style="position: absolute; top: -30%; left: -10%" />
                     </section>
                     <section>
+                        <h3>A Brief Look</h3>
+                        <pre class="fragment"><code class="js">$('button.continue').text('Next Step...');</code></pre>
+                        <pre class="fragment"><code class="js">var hiddenBox = $('#banner-message');
+
+$('#button-container button').on('click', function(event) {
+    hiddenBox.show();
+});</code></pre>
+                    </section>
+                    <section>
+                        <h3>AJAX</h3>
+                        <pre><code class="js">$.ajax({
+  url: '/api/getWeather',
+  method: 'GET',
+  data: {
+    zipcode: 97201
+  },
+  success: function( result ) {
+    $('#weather-temp').text(result + ' degrees');
+  }
+});</code></pre>
+                    </section>
+                    <section id="jquery-plugins" data-background="https://premium.wpmudev.org/wp-content/uploads/2013/10/pretty-plugins.png">
+                        <h3 class="color-white"><span>jQuery Plugins</span></h3>
+                        <div style="height: 300px"></div>
+                    </section>
+                    <section data-transition="none">
+                        <h4 class="text-right">How jQuery works</h4>
+                        <pre><code class="js">$('span').css('color', 'red');</code></pre>
+                    </section>
+                    <section data-transition="none">
+                        <h4 class="text-right">How jQuery works</h4>
+                        <pre><code class="js" data-noescape><mark class="highlight-block">$('span')</mark>.css('color', 'red');</code></pre>
+                    </section>
+                    <section data-transition="none">
+                        <h4 class="text-right">How jQuery works</h4>
+                        <pre><code class="js" data-noescape>$('span')<mark>.css('color', 'red');</mark></code></pre>
+                    </section>
+                    <section data-background="#202E3B">
+                        <p>A jQuery plugin is simply a new method that extends jQuery's prototype object.</p>
+                        <img alt="" src="./img/jquery-logo-no-text.png" width="150" class="no-border bg-transparent" style="position: absolute; top: -120%; left: -10%" />
+                    </section>
+                    <section data-background="#202E3B">
                         <h3>Live Demo</h3>
                         <p>Implementing a custom jQuery plugin.</p>
                         <img alt="Demo Image" src="./img/not-sure-if-trick-show-me-the-demo.jpg" width="400" class="no-border fragment" />
@@ -133,8 +188,8 @@
                             <li class="fragment">Handles sorting, paging, grouping and aggregates</li>
                         </ul>
                     </section>
-                    <section>
-                        <p>The <strong>presentation layer</strong> should be separate from the <strong>data layer</strong>.</p>
+                    <section data-background="#000">
+                        <p>The <strong>presentation layer</strong> must be separate from the <strong>data layer</strong>.</p>
                     </section>
                     <section>
                         <h4 class="text-right">Data Source</h4>
@@ -155,7 +210,7 @@
                         <h3>Templates</h3>
                         <img alt="template diagram" src="./img/template-diagram.jpg" class="no-border" />
                     </section>
-                    <section>
+                    <section data-background="#3F3F3F">
                         <h3>Syntax</h3>
                         <div>Render values as raw HTML: <pre><code class="html">#= value #</code></pre></div>
                         <div>Display HTML encoded values: <pre><code class="html">#: value #</code></pre></div>
