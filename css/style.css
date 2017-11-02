@@ -99,66 +99,89 @@ h1:after, h2:after, h3:after, h4:after, h5:after {
 
 .reveal .circle {
     position: absolute;
-    font-size: 0.8em;
+    font-size: 0.6em;
     background-color: green;
     border-radius: 50%;
     display: inline-block;
-    height: 200px;
-    width: 200px;
-    line-height: 200px;
+    height: 150px;
+    width: 150px;
+    line-height: 150px;
     text-align: center;
     vertical-align: middle;
 }
+
 .reveal .circle.center {
     position: absolute;
-    top: calc(50% - 100px);
-    left: calc(50% - 100px);
+    top: calc(50% - 125px);
+    left: calc(50% - 125px);
+    font-size: 1em;
+    height: 250px;
+    width: 250px;
+    line-height: 250px;
+    background-color: #CA491E;
 }
 
 .reveal .circle.top {
     position: absolute;
-    top: calc(50% - 100px - 200px - 50px);
-    left: calc(50% - 100px);
+    top: calc(50% - 75px - 200px - 50px);
+    left: calc(50% - 75px);
 }
 
 .reveal .circle.bottom {
     position: absolute;
-    top: calc(50% - 100px + 200px + 50px);
-    left: calc(50% - 100px);
+    top: calc(50% - 75px + 200px + 50px);
+    left: calc(50% - 75px);
 }
 
 .reveal .circle.left {
     position: absolute;
-    top: calc(50% - 100px);
-    left: calc(50% - 100px - 200px - 50px);
+    top: calc(50% - 75px);
+    left: calc(50% - 75px - 200px - 50px);
+
 }
 
 .reveal .circle.right {
     position: absolute;
-    top: calc(50% - 100px);
-    left: calc(50% - 100px + 200px + 50px);
+    top: calc(50% - 75px);
+    left: calc(50% - 75px + 200px + 50px);
 }
 
 .reveal .circle.top-left {
     position: absolute;
-    top: calc(50% - 100px - 200px);
-    left: calc(50% - 100px - 200px);
+    top: calc(50% - 75px - 200px);
+    left: calc(50% - 75px - 200px);
 }
 
 .reveal .circle.top-right {
     position: absolute;
-    top: calc(50% - 100px - 200px);
-    left: calc(50% - 100px + 200px);
+    top: calc(50% - 75px - 200px);
+    left: calc(50% - 75px + 200px);
 }
 
 .reveal .circle.bottom-left {
     position: absolute;
-    top: calc(50% - 100px + 200px);
-    left: calc(50% - 100px - 200px);
+    top: calc(50% - 75px + 200px);
+    left: calc(50% - 75px - 200px);
 }
 
 .reveal .circle.bottom-right {
     position: absolute;
-    top: calc(50% - 100px + 200px);
-    left: calc(50% - 100px + 200px);
+    top: calc(50% - 75px + 200px);
+    left: calc(50% - 75px + 200px);
+}
+
+#using-kendo-with-other-frameworks ul > li {
+    list-style-type: none;
+    display: inline-block;
+    background-color: #425366;
+    padding: 10px 40px;
+    margin-right: 15px;
+}
+
+#using-kendo-with-other-frameworks ul > li:hover {
+    background-color: #55697f;
+}
+
+#using-kendo-with-other-frameworks ul > li > a:hover {
+    color: #fff;
 }
