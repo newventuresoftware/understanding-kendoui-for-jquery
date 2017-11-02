@@ -88,3 +88,20 @@ h1:after, h2:after, h3:after, h4:after, h5:after {
 .reveal .color-green * {
     color: green;
 }
+
+.reveal .circle-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.reveal .circle {
+    font-size: 0.8em;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    line-height: 200px;
+    text-align: center;
+    vertical-align: middle;
+}

@@ -76,13 +76,12 @@
                     <h3>Agenda</h3>
                     <ul>
                         <li class="fragment">Overview</li>
-                        <li class="fragment">UI Widgets</li>
+                        <li class="fragment">UI Components</li>
                         <li class="fragment">Data Source</li>
                         <li class="fragment">Templates</li>
                     </ul>
                 </section>
                 <!-- Overview -->
-                <!-- jQuery, jQuery extensions, KendoUI Overview(widgets, dataviz, mobile) -->
                 <section>
                     <section id="jquery" data-background="#202E3B">
                         <img alt="" src="./img/jquery.png" class="no-border" />
@@ -156,20 +155,25 @@ $('#button-container button').on('click', function(event) {
                         <p class="color-white" style="font-size: 0.8em"><span>A complete JavaScript UI component library that allows you to quickly build web apps using your framework of choice.</span></p>
                     </section>
                     <section data-background="./img/umbrella-bg.jpg" class="color-white">
-                        <ul>
-                            <li>UI Widgets</li>
-                            <li>DataViz</li>
-                            <li>Mobile</li>
-                        </ul>
+                        <div class="circle-wrapper">
+                            <div class="circle" id="kendo-circle">Kendo UI</div>
+                            <div class="circle fragment">Components</div>
+                            <div class="circle">Data Source</div>
+                            <div class="circle">Validation</div>
+                            <div class="circle">Globalization</div>
+                            <div class="circle">Templates</div>
+                            <div class="circle">Drag & Drop</div>
+                            <div class="circle">MVVM</div>
+                        </div>
                     </section>
                 </section>
-                <!-- Widgets -->
+                <!-- UI Components -->
                 <section>
                     <section>
-                        <h3>UI Widgets</h3>
+                        <h3>UI Components</h3>
                     </section>
                     <section>
-                        <p>Kendo UI Widgets are simply jQuery plugins.</p>
+                        <p>Kendo UI Components are simply jQuery plugins.</p>
                         <pre><code class="js">$('#menu').kendoMenu();</code></pre>
                     </section>
                     <section>
@@ -196,7 +200,8 @@ $('#button-container button').on('click', function(event) {
                         </ul>
                     </section>
                     <section data-background="#000">
-                        <p>The <strong>presentation layer</strong> must be separate from the <strong>data layer</strong>.</p>
+                        <!-- <p>The <strong><u>presentation layer</u></strong> must be separate from the <strong><u>data layer</u></strong>.</p> -->
+                        <p style="font-size: 1.5em">presentation &ne; data</p>
                     </section>
                     <section>
                         <h4 class="text-right">Data Source</h4>
