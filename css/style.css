@@ -112,12 +112,12 @@ h1:after, h2:after, h3:after, h4:after, h5:after {
 
 .reveal .circle.center {
     position: absolute;
-    top: calc(50% - 125px);
-    left: calc(50% - 125px);
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
     font-size: 1em;
-    height: 250px;
-    width: 250px;
-    line-height: 250px;
+    height: 300px;
+    width: 300px;
+    line-height: 300px;
     background-color: #CA491E;
 }
 

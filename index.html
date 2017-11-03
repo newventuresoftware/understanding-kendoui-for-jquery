@@ -25,9 +25,9 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section id="main">
-                    <h2 class="title">KendoUI for jQuery</h2>
-                    <img class="no-border" alt="" src="./img/kendoka.png" />
+				<section id="main" data-background="./img/umbrella-bg.jpg" class="color-white">
+                    <h2 class="title">Understanding KendoUI for jQuery</h2>
+                    <img class="no-border bg-transparent" alt="" src="./img/kendoka-08-350.png" />
                 </section>
                 <section id="speaker-and-company-info">
                     <section id="speaker-info" data-background="./img/telerik-bg.jpg">
@@ -65,7 +65,7 @@
                         <img src="./img/stage-fright.jpg" class="no-border" />
                     </section> 
                     <section>
-                        <h4>Breaking the Ice</h4>
+                        <h3>Breaking the Ice</h3>
                         <img src="./img/breaking-the-ice.jpg" width="525" />
                     </section>
                     <section>
@@ -75,13 +75,13 @@
                 <section id="agenda" class="color-white" data-background-image="./img/school-board.jpg">
                     <h3>Agenda</h3>
                     <ul>
-                        <li class="fragment">Overview</li>
+                        <li class="fragment">jQuery</li>
                         <li class="fragment">UI Components</li>
                         <li class="fragment">Data Source</li>
                         <li class="fragment">Templates</li>
                     </ul>
                 </section>
-                <!-- Overview -->
+                <!-- jQuery -->
                 <section>
                     <section id="jquery" data-background="#202E3B">
                         <img alt="" src="./img/jquery.png" class="no-border" />
@@ -172,14 +172,16 @@ $('#button-container button').on('click', function(event) {
                 <section>
                     <section>
                         <h3>UI Components</h3>
+                        <img class="no-border" alt="" src="./img/kendoka-03-350.png" width="300" />
                     </section>
                     <section>
                         <p>Kendo UI Components are simply jQuery plugins.</p>
                         <pre><code class="js">$('#menu').kendoMenu();</code></pre>
                     </section>
-                    <section>
-                        <h4><a href="http://demos.telerik.com/kendo-ui/" target="_blank">UI Components</a></h4>
-                        <img alt="Demo Image" src="./img/not-sure-if-trick-show-me-the-demo.jpg" width="400" class="no-border" />
+                    <section data-background="black">
+                        <h3><a href="http://demos.telerik.com/kendo-ui/" target="_blank" style="color: lightblue">Live Demo</a></h3>
+                        <p>UI Components</p>
+                        <img alt="Demo Image" src="./img/code-or-didnt-happen.jpg" width="400" class="no-border" />
                     </section>
                 </section>
                 <!-- Data Source -->
@@ -268,10 +270,10 @@ $('#container').html(template({ collection: [0,1,2,3,4,5] }));</code></pre>
                         </p>
                         <pre><code class="js">kendo.template('<p> #: message #</p>', { useWithBlock: false });</code></pre>
                     </section>
-                    <section>
+                    <section data-background="#000">
                         <h3>Live Demo</h3>
                         <a href="http://demos.telerik.com/kendo-ui/templates/index" target="_blank">
-                            <img alt="Demo Image" src="./img/not-sure-if-trick-show-me-the-demo.jpg" width="400" class="no-border" />
+                            <img alt="Demo Image" src="./img/code-or-didnt-happen.jpg" width="400" class="no-border" />
                         </a>
                     </section>
                 </section>
@@ -288,6 +290,10 @@ $('#container').html(template({ collection: [0,1,2,3,4,5] }));</code></pre>
                     </section>
                     <section>
                         <h3>Performance</h3>
+                    </section>
+                    <section data-background="#000">
+                        <p>When JS developers argue about which framework is the best.</p>
+                        <video src="./img/wwe-fight.mp4" autoplay loop width="500"></video>
                     </section>
                     <section data-background="#3EA8DF" class="color-white" id="using-kendo-with-other-frameworks">
                         <h3>KendoUI Supports</h3>
