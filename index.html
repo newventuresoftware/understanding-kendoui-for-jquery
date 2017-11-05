@@ -149,24 +149,24 @@ $('#button-container button').on('click', function(event) {
                         <p>Implementing a custom jQuery plugin.</p>
                         <img alt="Demo Image" src="./img/not-sure-if-trick-show-me-the-demo.jpg" width="400" class="no-border fragment" />
                     </section>
-                    <section data-background="./img/umbrella-bg.jpg">
-                        <h3 class="color-white"><span>KendoUI</span></h3>
-                        <img alt="" src="./img/kendoka-states1.png" class="no-border bg-transparent" width="200" style="margin: 0" />
-                        <p class="color-white" style="font-size: 0.8em"><span>A complete JavaScript UI component library that allows you to quickly build web apps using your framework of choice.</span></p>
-                    </section>
-                    <section data-background="./img/umbrella-bg.jpg" class="color-white">
-                        <div class="circle-wrapper">
-                            <div class="circle center"><strong>Kendo UI</strong></div>
-                            <div class="circle top fragment">Components</div>
-                            <div class="circle top-right fragment">Data Source</div>
-                            <div class="circle right fragment">Validation</div>
-                            <div class="circle bottom-right fragment">Globalization</div>
-                            <div class="circle bottom fragment">Templates</div>
-                            <div class="circle bottom-left fragment">Drag & Drop</div>
-                            <div class="circle left fragment">MVVM</div>
-                            <div class="circle top-left fragment">Export</div>
-                        </div>
-                    </section>
+                </section>
+                <section data-background="./img/umbrella-bg.jpg">
+                    <h3 class="color-white"><span>KendoUI</span></h3>
+                    <img alt="" src="./img/kendoka-states1.png" class="no-border bg-transparent" width="200" style="margin: 0" />
+                    <p class="color-white" style="font-size: 0.8em"><span>A complete JavaScript UI component library that allows you to quickly build web apps using your framework of choice.</span></p>
+                </section>
+                <section data-background="./img/umbrella-bg.jpg" class="color-white">
+                    <div class="circle-wrapper">
+                        <div class="circle center"><strong>Kendo UI</strong></div>
+                        <div class="circle top fragment">Components</div>
+                        <div class="circle top-right fragment">Data Source</div>
+                        <div class="circle right fragment">Validation</div>
+                        <div class="circle bottom-right fragment">Globalization</div>
+                        <div class="circle bottom fragment">Templates</div>
+                        <div class="circle bottom-left fragment">Drag & Drop</div>
+                        <div class="circle left fragment">MVVM</div>
+                        <div class="circle top-left fragment">Export</div>
+                    </div>
                 </section>
                 <!-- UI Components -->
                 <section>
@@ -179,8 +179,8 @@ $('#button-container button').on('click', function(event) {
                         <pre><code class="js">$('#menu').kendoMenu();</code></pre>
                     </section>
                     <section data-background="black">
-                        <h3><a href="http://demos.telerik.com/kendo-ui/" target="_blank" style="color: lightblue">Live Demo</a></h3>
-                        <p>UI Components</p>
+                        <h3>Live Demo</h3>
+                        <p><a href="http://demos.telerik.com/kendo-ui/" target="_blank" style="color: lightblue">UI Components</a></p>
                         <img alt="Demo Image" src="./img/code-or-didnt-happen.jpg" width="400" class="no-border" />
                     </section>
                 </section>
@@ -189,6 +189,9 @@ $('#button-container button').on('click', function(event) {
                     <section>
                         <h3>Data Source</h3>
                         <p>An abstraction for using local or remote data.</p>
+                    </section>
+                    <section data-background="#000">
+                        <p style="font-size: 1.5em">presentation &ne; data</p>
                     </section>
                     <section>
                         <h4 class="text-right">DataSource Features</h4>
@@ -201,10 +204,6 @@ $('#button-container button').on('click', function(event) {
                             <li class="fragment">Provide query mechanism via filter expressions</li>
                             <li class="fragment">Handles sorting, paging, grouping and aggregates</li>
                         </ul>
-                    </section>
-                    <section data-background="#000">
-                        <!-- <p>The <strong><u>presentation layer</u></strong> must be separate from the <strong><u>data layer</u></strong>.</p> -->
-                        <p style="font-size: 1.5em">presentation &ne; data</p>
                     </section>
                     <section>
                         <h4 class="text-right">Data Source</h4>
@@ -246,9 +245,9 @@ $("#container").html(template({ message: "Hello Kendo!" }));
                         <pre><code class="html"><div id="container"></div>
 <script id="externalTemplate" type="text/x-kendo-template">
     <ul>
-        # for (var i = 0; i < collection.length; i++) { #
-            <li>#= collection[i] #</li>
-        # } #
+    # for (var i = 0; i < collection.length; i++) { #
+        <li>#: collection[i] #</li>
+    # } #
     </ul>
 </script>
                         </code></pre>
@@ -286,11 +285,12 @@ $('#container').html(template({ collection: [0,1,2,3,4,5] }));</code></pre>
                         <p>Kendo UI</p>
                     </section>
                     <section>
-                        <h3>Kendo UI and JSDO</h3>
+                        <h3>Using JSDO with Kendo UI</h3>
+                        <p><a href="https://www.telerik.com/whitepapers/kendo-ui/using-the-progress-jsdo-with-kendo-ui" target="_blank">Whitepaper</a></p>
                     </section>
-                    <section>
-                        <h3>Performance</h3>
-                    </section>
+                    <!-- <section>
+                         <h3>Performance</h3>
+                    </section> -->
                     <section data-background="#000">
                         <p>When JS developers argue about which framework is the best.</p>
                         <video src="./img/wwe-fight.mp4" autoplay loop width="500"></video>
@@ -304,12 +304,28 @@ $('#container').html(template({ collection: [0,1,2,3,4,5] }));</code></pre>
                             <li><a href="https://www.telerik.com/kendo-react-ui" target="_blank">React</a></li>
                             <li><a href="https://www.telerik.com/kendo-vue-ui" target="_blank">Vue</a></li>
                         </ul>
+                        <ul style="font-size: 0.8em; margin-top: 15px;">
+                            <li><a href="#" target="_blank">JSP</a></li>
+                            <li><a href="#" target="_blank">ASP.NET MVC</a></li>
+                            <li><a href="#" target="_blank">ASP.NET Core</a></li>
+                            <li><a href="#" target="_blank">PHP</a></li>
+                        </ul>
                     </section>
                     <section>
                         <h3>Northwind Dashboard</h3>
-                        <p><a href="http://demos.telerik.com/aspnet-mvc/html5-dashboard-sample-app/" target="_blank">Demo</a></p>
+                        <p><a href="http://demos.telerik.com/aspnet-mvc/html5-dashboard-sample-app/" target="_blank">demos.telerik.com/aspnet-mvc/html5-dashboard-sample-app/</a></p>
                         <p><a href="https://github.com/telerik/kendoui-northwind-dashboard" target="_blank">github.com/telerik/kendoui-northwind-dashboard</a></p>
                     </section>
+                </section>
+                <section id="learning-resources" class="color-white" data-background-image="./img/school-board.jpg">
+                    <h3>Learning Resources</h3>
+                    <ul style="list-style-type: none">
+                        <li><a href="https://docs.telerik.com/kendo-ui/" target="_blank">docs.telerik.com/kendo-ui/</a></li>
+                        <li><a href="http://demos.telerik.com/kendo-ui/" target="_blank">demos.telerik.com/kendo-ui/</a></li>
+                        <li><a href="https://github.com/telerik/kendo-ui-core" target="_blank">github.com/telerik/kendo-ui-core</a></li>
+                        <li><a href="https://www.telerik.com/support/whats-new/kendo-ui/roadmap" target="_blank">telerik.com/support/whats-new/kendo-ui/roadmap</a></li>
+                        <li><a href="https://www.newventuresoftware.com/blog" target="_blank">newventuresoftware.com/blog</a></li>
+                    </ul>
                 </section>
                 <section id="questions">
                     <h3>Questions?</h3>
