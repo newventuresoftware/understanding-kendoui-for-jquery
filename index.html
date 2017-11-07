@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Understanding KendoUI for jQuery</title>
+		<title>KendoUI for jQuery</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/simple.css">
@@ -26,26 +26,24 @@
 		<div class="reveal">
 			<div class="slides">
 				<section id="main" data-background="./img/umbrella-bg.jpg" class="color-white">
-                    <h2 class="title">Understanding KendoUI for jQuery</h2>
+                    <h2 class="title">KendoUI for jQuery</h2>
                     <img class="no-border bg-transparent" alt="" src="./img/kendoka-08-350.png" />
                 </section>
                 <section id="speaker-and-company-info">
                     <section id="speaker-info" data-background="./img/telerik-bg.jpg">
-                        <div class="speaker-img-container">
-                            <img src="./img/speaker.jpg" width="200" />
-                        </div>
-		                <table class="speaker-contact-info">
+                        <h3>Denis Kyashif</h3>
+		                <table>
 			                <tbody>
-			                    <tr>
-				                    <td><img class="no-border" src="./img/email.png" width="50"></td>
+                                <tr>
+				                    <td><img class="no-border" src="./img/email.png" width="70"></td>
 				                    <td style="vertical-align:middle"> <a href="mailto:denis@newventuresoftware.com?Subject=Hello" target="_blank">denis@newventuresoftware.com</a></td>
 			                    </tr>
 			                    <tr>
-				                    <td><img class="no-border" src="./img/github.png" width="50"></td>
+				                    <td><img class="no-border" src="./img/github.png" width="70"></td>
 				                    <td style="vertical-align:middle"> <a href="https://github.com/deniskyashif" target="_blank">github.com/deniskyashif</a></td>
 			                    </tr>
                                 <tr>
-				                    <td><img class="no-border" src="./img/twitter.png" width="50"></td>
+				                    <td><img class="no-border" src="./img/twitter.png" width="70"></td>
 				                    <td style="vertical-align:middle"><a href="https://twitter.com/deniskyashif" target="_blank">@deniskyashif</a></td>
 			                    </tr>
 			                </tbody>
@@ -147,7 +145,9 @@ $('#button-container button').on('click', function(event) {
                     <section data-background="#202E3B">
                         <h3>Live Demo</h3>
                         <p>Implementing a custom jQuery plugin.</p>
-                        <img alt="Demo Image" src="./img/not-sure-if-trick-show-me-the-demo.jpg" width="400" class="no-border fragment" />
+                        <a href="demos/jquery-plugin.html" target="_blank">
+                            <img alt="Demo Image" src="./img/not-sure-if-trick-show-me-the-demo.jpg" width="400" class="no-border fragment" />
+                        </a>
                     </section>
                 </section>
                 <section data-background="./img/umbrella-bg.jpg">
@@ -157,7 +157,7 @@ $('#button-container button').on('click', function(event) {
                 </section>
                 <section data-background="./img/umbrella-bg.jpg" class="color-white">
                     <div class="circle-wrapper">
-                        <div class="circle center"><strong>Kendo UI</strong></div>
+                        <div class="circle center"><strong class="brackets">Kendo UI</strong></div>
                         <div class="circle top fragment">Components</div>
                         <div class="circle top-right fragment">Data Source</div>
                         <div class="circle right fragment">Validation</div>
@@ -180,8 +180,9 @@ $('#button-container button').on('click', function(event) {
                     </section>
                     <section data-background="black">
                         <h3>Live Demo</h3>
-                        <p><a href="http://demos.telerik.com/kendo-ui/" target="_blank" style="color: lightblue">UI Components</a></p>
-                        <img alt="Demo Image" src="./img/code-or-didnt-happen.jpg" width="400" class="no-border" />
+                        <a href="http://demos.telerik.com/kendo-ui/" target="_blank" style="color: lightblue">
+                            <img alt="Demo Image" src="./img/code-or-didnt-happen.jpg" width="400" class="no-border" />
+                        </a>
                     </section>
                 </section>
                 <!-- Data Source -->
@@ -215,7 +216,9 @@ $('#button-container button').on('click', function(event) {
                     </section>
                     <section>
                         <h3>Live Demo</h3>
-                        <img alt="Demo Image" src="./img/not-sure-if-trick-show-me-the-demo.jpg" width="400" class="no-border" />
+                        <a href="demos/data-source.html" target="_blank">
+                            <img alt="Demo Image" src="./img/not-sure-if-trick-show-me-the-demo.jpg" width="400" class="no-border" />
+                        </a>
                     </section>
                 </section>
                 <!-- Templates -->
@@ -271,7 +274,7 @@ $('#container').html(template({ collection: [0,1,2,3,4,5] }));</code></pre>
                     </section>
                     <section data-background="#000">
                         <h3>Live Demo</h3>
-                        <a href="http://demos.telerik.com/kendo-ui/templates/index" target="_blank">
+                        <a href="demos/templates.html" target="_blank">
                             <img alt="Demo Image" src="./img/code-or-didnt-happen.jpg" width="400" class="no-border" />
                         </a>
                     </section>
@@ -279,18 +282,16 @@ $('#container').html(template({ collection: [0,1,2,3,4,5] }));</code></pre>
                 <!-- Misc -->
                 <section>
                     <section data-background="./img/bg-pattern.png" class="color-white" id="theme-builder">
-                        <a href="http://themebuilder.telerik.com/kendo-ui">
-                            <img alt="" src="./img/progress_mainLogo.png" class="no-border bg-transparent" width="700" />
+                        <a href="http://demos.telerik.com/kendo-ui/themebuilder/" target="_blank">
+                            <h3>Kendo UI Theme Builder</h3>
                         </a>
-                        <p>Kendo UI</p>
                     </section>
                     <section>
                         <h3>Using JSDO with Kendo UI</h3>
-                        <p><a href="https://www.telerik.com/whitepapers/kendo-ui/using-the-progress-jsdo-with-kendo-ui" target="_blank">Whitepaper</a></p>
+                        <p><a href="https://www.telerik.com/whitepapers/kendo-ui/using-the-progress-jsdo-with-kendo-ui" target="_blank">
+                            telerik.com/whitepapers/kendo-ui/using-the-progress-jsdo-with-kendo-ui
+                        </a></p>
                     </section>
-                    <!-- <section>
-                         <h3>Performance</h3>
-                    </section> -->
                     <section data-background="#000">
                         <p>When JS developers argue about which framework is the best.</p>
                         <video src="./img/wwe-fight.mp4" autoplay loop width="500"></video>
@@ -320,11 +321,11 @@ $('#container').html(template({ collection: [0,1,2,3,4,5] }));</code></pre>
                 <section id="learning-resources" class="color-white" data-background-image="./img/school-board.jpg">
                     <h3>Learning Resources</h3>
                     <ul style="list-style-type: none">
-                        <li><a href="https://docs.telerik.com/kendo-ui/" target="_blank">docs.telerik.com/kendo-ui/</a></li>
-                        <li><a href="http://demos.telerik.com/kendo-ui/" target="_blank">demos.telerik.com/kendo-ui/</a></li>
-                        <li><a href="https://github.com/telerik/kendo-ui-core" target="_blank">github.com/telerik/kendo-ui-core</a></li>
-                        <li><a href="https://www.telerik.com/support/whats-new/kendo-ui/roadmap" target="_blank">telerik.com/support/whats-new/kendo-ui/roadmap</a></li>
-                        <li><a href="https://www.newventuresoftware.com/blog" target="_blank">newventuresoftware.com/blog</a></li>
+                        <li><a href="https://docs.telerik.com/kendo-ui/" target="_blank" style="color: lightblue">docs.telerik.com/kendo-ui/</a></li>
+                        <li><a href="http://demos.telerik.com/kendo-ui/" target="_blank" style="color: lightblue">demos.telerik.com/kendo-ui/</a></li>
+                        <li><a href="https://github.com/telerik/kendo-ui-core" target="_blank" style="color: lightblue">github.com/telerik/kendo-ui-core</a></li>
+                        <li><a href="https://www.telerik.com/support/whats-new/kendo-ui/roadmap" target="_blank" style="color: lightblue">telerik.com/support/whats-new/kendo-ui/roadmap</a></li>
+                        <li><a href="https://www.newventuresoftware.com/blog" target="_blank" style="color: lightblue">newventuresoftware.com/blog</a></li>
                     </ul>
                 </section>
                 <section id="questions">
@@ -336,7 +337,7 @@ $('#container').html(template({ collection: [0,1,2,3,4,5] }));</code></pre>
 		            <table>
 			            <tbody>
                             <tr>
-				                <td><img class="no-border" src="./img/email.png" style="width:70px"></td>
+				                <td><img class="no-border" src="./img/email.png" width="70"></td>
 				                <td style="vertical-align:middle"> <a href="mailto:denis@newventuresoftware.com?Subject=Hello" target="_blank">denis@newventuresoftware.com</a></td>
 			                </tr>
 			                <tr>

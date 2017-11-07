@@ -3,19 +3,15 @@
     <head>
         <meta charset="utf-8">
         <title>jQuery Plugin Demo</title>
-        <script
-            src="https://code.jquery.com/jquery-3.2.1.min.js"
-            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <body>
             <h1>jQuery Rocks!</h1>
             <script>
-             
              $.fn.highlightOnHover = function() {
                  var element = this;
                  
                  element.on('mouseenter', function() {
-                     element.css('background-color', 'yellow'); 
+                     element.css('background-color', 'lightblue');
                  });
 
                  element.on('mouseout', function() {
@@ -24,7 +20,6 @@
              };
 
              $('h1').highlightOnHover();
-             
             </script>
     </body>
 </html>

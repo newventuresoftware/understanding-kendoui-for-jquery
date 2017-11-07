@@ -97,6 +97,14 @@ h1:after, h2:after, h3:after, h4:after, h5:after {
     right: 0;
 }
 
+.reveal .circle-wrapper .brackets:before {
+    color: #4DBEA1;
+}
+
+.reveal .circle-wrapper .brackets:after {
+    color: #4DBEA1;
+}
+
 .reveal .circle {
     position: absolute;
     font-size: 0.6em;

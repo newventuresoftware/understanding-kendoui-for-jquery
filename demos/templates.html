@@ -21,12 +21,10 @@
         <script type="x/kendo-template" id="list-template">
             <ul>
             # for (var i = 0; i < data.length; i++) { #
-                # if(data[i].rating > 7) { #
                 <li>
                     <span>#: data[i].id #</span>
                     <strong>#: data[i].title #</strong>
                 </li>             
-                 # } #
              # } #
         </ul>
         </script>
