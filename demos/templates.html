@@ -20,34 +20,35 @@
 
         <script type="x/kendo-template" id="list-template">
             <ul>
-            # for (var i = 0; i < data.length; i++) { #
+            # for (var i = 0; i < items.length; i++) { #
                 <li>
-                    <span>#: data[i].id #</span>
-                    <strong>#: data[i].title #</strong>
-                </li>             
+                    <span>#: items[i].year #</span>
+                    <strong>#: items[i].title #</strong>
+                </li>
              # } #
-        </ul>
+             </ul>
         </script>
         
         <script>
          function renderHeader() {
+             var title = 'Movie List';
              var headerTemplateFn = kendo.template('<h1> #: data.title #</h1>');
-             $('#header').html(headerTemplateFn({ title: 'Movie List' }));
+             $('#header').html(headerTemplateFn({ title: title }));
          }
 
          function renderList() {
              var movies = [
-                 { id: 1, title: 'Dr. Strangelove', rating: 9 },
-                 { id: 2, title: 'Eyes Wide Shut', rating: 7 },
-                 { id: 3, title: 'No Country For Old Men', rating: 8 },
-                 { id: 4, title: 'The Departed', rating: 7 },
-                 { id: 5, title: 'Schindler\'s List', rating: 8 }
+                 { year: 1964, title: 'Dr. Strangelove', rating: 9 },
+                 { year: 1999, title: 'Eyes Wide Shut', rating: 7 },
+                 { year: 2007, title: 'No Country For Old Men', rating: 8 },
+                 { year: 2006, title: 'The Departed', rating: 7 },
+                 { year: 1993, title: 'Schindler\'s List', rating: 8 }
              ];
 
              var listTemplateString = $('#list-template').html();
              var listTemplateFn = kendo.template(listTemplateString);
              
-             $('#main').html(listTemplateFn(movies));             
+             $('#main').html(listTemplateFn({ items: movies }));
          }
          
          renderHeader();

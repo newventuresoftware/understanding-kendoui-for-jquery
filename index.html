@@ -84,6 +84,9 @@
                     <section id="jquery" data-background="#202E3B">
                         <img alt="" src="./img/jquery.png" class="no-border" />
                     </section>
+                    <section data-background="#e6e6e6">
+                        <img alt="" src="./img/DOM-model.svg" class="no-border bg-transparent" width="600" />
+                    </section>
                     <section data-background="#202E3B">
                         <h4 class="text-right">jQuery</h4>
                         <p>Simplifies document traversal and manipulation, event handling, animation, and Ajax with an easy-to-use API</p>
@@ -102,10 +105,10 @@
                     </section>
                     <section>
                         <h3>A Brief Look</h3>
-                        <pre class="fragment"><code class="js">$('button.continue').text('Next Step...');</code></pre>
-                        <pre class="fragment"><code class="js">var hiddenBox = $('#banner-message');
+                        <pre><code class="html"><button class="continue">Click</button></code></pre>
+                        <pre><code class="js">$('button.continue').text('Next Step...');
 
-$('#button-container button').on('click', function(event) {
+$('button.continue').on('click', function(event) {
     hiddenBox.show();
 });</code></pre>
                     </section>
@@ -128,15 +131,15 @@ $('#button-container button').on('click', function(event) {
                     </section>
                     <section data-transition="none">
                         <h4 class="text-right">How jQuery works</h4>
-                        <pre><code class="js">$('span').css('color', 'red');</code></pre>
+                        <pre><code class="js">$('section').css('color', 'red');</code></pre>
                     </section>
                     <section data-transition="none">
                         <h4 class="text-right">How jQuery works</h4>
-                        <pre><code class="js" data-noescape><mark class="highlight-block">$('span')</mark>.css('color', 'red');</code></pre>
+                        <pre><code class="js" data-noescape><mark class="highlight-block">$('section')</mark>.css('color', 'red');</code></pre>
                     </section>
                     <section data-transition="none">
                         <h4 class="text-right">How jQuery works</h4>
-                        <pre><code class="js" data-noescape>$('span')<mark>.css('color', 'red');</mark></code></pre>
+                        <pre><code class="js" data-noescape>$('section')<mark>.css('color', 'red');</mark></code></pre>
                     </section>
                     <section data-background="#202E3B">
                         <p>A jQuery plugin is simply a new method that extends jQuery's prototype object.</p>
@@ -257,7 +260,7 @@ $("#container").html(template({ message: "Hello Kendo!" }));
                         <pre><code class="js">// compile
 var template = kendo.template($('#externalTemplate').html());
 // render
-$('#container').html(template({ collection: [0,1,2,3,4,5] }));</code></pre>
+$('#container').html(template({ collection: [0, 1, 2, 3, 4, 5] }));</code></pre>
                     </section>
                     <section>
                         <h3>Escaping</h3>

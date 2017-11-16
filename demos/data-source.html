@@ -18,16 +18,21 @@
         <div id="grid"></div>
         <script>
          var dataSource = new kendo.data.DataSource({
-             data: [{
-                 employee: "Joe Smith",
-                 sales: 2000
-             }, {
-                 employee: "Jane Smith",
-                 sales: 2250
-             }, {
-                 employee: "Will Roberts",
-                 sales: 1550
-             }]
+             data: [
+                 { employee: "Joe Smith", sales: 2000 },
+                 { employee: "Jane Smith", sales: 2250 },
+                 { employee: "Will Roberts", sales: 1550 },
+                 { employee: "John Hopcroft", sales: 1000 },
+                 { employee: "Maggies Simpson", sales: 3120 }
+             ],
+             schema: {
+                 model: {
+                     fields: {
+                         employee: { type: 'string' },
+                         sales: { type: 'number' }
+                     }
+                 }
+             }
          });
 
          $(function(){
@@ -55,7 +60,8 @@
                  }, {
                      field: "sales",
                      title: "Sales",
-                     template: '#= kendo.toString(sales, "N0") #'
+                     template: '#= kendo.toString(sales, "N0") #',
+                     type: 'number'
                  }]
              });
          })
