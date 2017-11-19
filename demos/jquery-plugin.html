@@ -7,11 +7,12 @@
         <body>
             <h1>jQuery Rocks!</h1>
             <script>
+
              $.fn.highlightOnHover = function() {
                  var element = this;
                  
                  element.on('mouseenter', function() {
-                     element.css('background-color', 'lightblue');
+                     element.css('background-color', yellow);
                  });
 
                  element.on('mouseout', function() {

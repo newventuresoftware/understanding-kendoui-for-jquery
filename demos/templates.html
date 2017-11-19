@@ -22,8 +22,9 @@
             <ul>
             # for (var i = 0; i < items.length; i++) { #
                 <li>
-                    <span>#: items[i].year #</span>
                     <strong>#: items[i].title #</strong>
+                    <span>(#: items[i].year #)</span>,
+                    <span>#: items[i].rating #</span>
                 </li>
              # } #
              </ul>
@@ -31,9 +32,8 @@
         
         <script>
          function renderHeader() {
-             var title = 'Movie List';
-             var headerTemplateFn = kendo.template('<h1> #: data.title #</h1>');
-             $('#header').html(headerTemplateFn({ title: title }));
+             var headerTemplateFn = kendo.template('<h1> #: title #</h1>');
+             $('#header').html(headerTemplateFn({ title: 'PUG Movie List' }));
          }
 
          function renderList() {
